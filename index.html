@@ -44,19 +44,14 @@
             var url = "https://www.youtube.com/watch?v=GSJdhd0stAg&ab_channel=Warhaus";
             var newTab = window.open(url, '_blank');
             newTab.focus();
-            checkIfAllClicked();
+         
         }
 
         function redirectToPage(page) {
             window.location.href = page;
         }
 
-        function checkIfAllClicked() {
-            if (motiv1Clicked && motiv2Clicked && motiv3Clicked && motiv4Clicked) {
-                document.getElementById("additionalImage").src ="happy-cat-happy-happy-cat.gif"; // Schimbați "path_to_your_additional_image.jpg" cu calea către imaginea dvs. suplimentară
-                document.getElementById("additionalImage").style.display = "block";
-            }
-        }
+
     </script>
 </body>
 </html>
