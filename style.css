@@ -1,0 +1,63 @@
+body {
+    background-color: #f7eef7; /* Roz deschis */
+    color: #333; /* Culoare de text închisă */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+}
+.coffee-button {
+    background-color: #7B5534; /* Coffee color */
+    color: #FFFFFF; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    border-radius: 50px; /* Make it circular */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.coffee-button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #5A3E28; /* Darker shade for top */
+    border-radius: 50%;
+    top: -10%;
+    left: 0;
+    z-index: -1;
+}
+
+.coffee-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #A98261; /* Lighter shade for bottom */
+    border-radius: 50%;
+    bottom: -50%;
+    left: 0;
+    z-index: -1;
+}
+
+.header{
+   
+    color: #ff66a3; /* Roz aprins */
+    font-size: 100px;
+    text-align: center;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+img{
+    border-radius: 200px;
+
+}
+h1{
+    text-align: center;
+    font-size: 100px;
+    color:#ff66a3
+}
+p{
+    font-size: 40px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reasons to date me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br>
+    <br>
+    <div class="header">Reasons to date me:</div>
+    <img src="images.png" height="477px" width="500px"><br><br>
+    <img id="additionalImage" src="" style="display: none;" height="200px" width="200px">
+    <br><br><br>
+    <button class="coffee-button" onclick="Motivul1()"><em>Apasa pentru motivul1</em></button>
+    <button class="coffee-button" onclick="Motivul2()"><em>Apasa pentru motivul2</em></button>
+    <button class="coffee-button" onclick="Motivul3()"><em>Apasa pentru motivul3</em></button>
+    <button class="coffee-button" onclick="Motivul4()"><em>Apasa pentru motivul suplimentar</em> &#x1F308;</button>
+
+    <script> 
+        var motiv1Clicked = false;
+        var motiv2Clicked = false;
+        var motiv3Clicked = false;
+        var motiv4Clicked = false;
+
+        function Motivul1() {
+            motiv1Clicked = true;
+            redirectToPage("Motivul1.html");
+        }
+
+        function Motivul2() {
+            motiv2Clicked = true;
+            redirectToPage("Motivul2.html");
+        }
+
+        function Motivul3() {
+            motiv3Clicked = true;
+            redirectToPage("Motivul3.html");
+        }
+
+        function Motivul4() {
+            motiv4Clicked = true;
+            var url = "https://www.youtube.com/watch?v=GSJdhd0stAg&ab_channel=Warhaus";
+            var newTab = window.open(url, '_blank');
+            newTab.focus();
+            checkIfAllClicked();
+        }
+
+        function redirectToPage(page) {
+            window.location.href = page;
+        }
+
+        function checkIfAllClicked() {
+            if (motiv1Clicked && motiv2Clicked && motiv3Clicked && motiv4Clicked) {
+                document.getElementById("additionalImage").src ="happy-cat-happy-happy-cat.gif"; // Schimbați "path_to_your_additional_image.jpg" cu calea către imaginea dvs. suplimentară
+                document.getElementById("additionalImage").style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
